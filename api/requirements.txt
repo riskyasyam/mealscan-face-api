@@ -1,0 +1,31 @@
+# Core face recognition
+insightface==0.7.3
+onnxruntime==1.16.3
+
+# Image processing
+opencv-python==4.8.1.78
+numpy==1.24.4
+Pillow==10.1.0
+
+# API backend
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.23
+pymysql==1.1.0
+
+# Security & Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+cryptography==41.0.7
+
+# Utilities
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+requests==2.31.0
+
+# Optional (testing & debugging)
+matplotlib==3.8.2

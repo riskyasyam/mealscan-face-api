@@ -1,0 +1,54 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+
+# Data directories
+data/faces/*
+data/embeddings/*
+!data/faces/.gitkeep
+!data/embeddings/.gitkeep
+
+# Model cache
+.insightface/
+models/insightface/*
+!models/insightface/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Test files
+test_*.jpg
+test_*.png
+*.jpg
+*.png
+!docs/*.jpg
+!docs/*.png
