@@ -1,6 +1,6 @@
 """
 Face Recognition Utilities
-Menggunakan ArcFace + MobileFaceNet untuk face recognition yang ringan di CPU
+Menggunakan ArcFace face recognition yang ringan di CPU
 """
 import cv2
 import numpy as np
@@ -18,18 +18,18 @@ logger = logging.getLogger(__name__)
 class FaceRecognitionSystem:
     """
     Sistem Face Recognition untuk Absensi Makan Karyawan
-    Menggunakan model ArcFace dengan MobileFaceNet backbone
+    Menggunakan model ArcFace
     """
     
     def __init__(self, 
                  det_size: Tuple[int, int] = (640, 640),
-                 similarity_threshold: float = 0.4):
+                 similarity_threshold: float = 0.5):
         """
         Initialize Face Recognition System
         
         Args:
             det_size: Size untuk face detection
-            similarity_threshold: Threshold untuk face matching (0.4 default, strict)
+            similarity_threshold: Threshold untuk face matching (0.5 default, strict)
         """
         self.det_size = det_size
         self.similarity_threshold = similarity_threshold
